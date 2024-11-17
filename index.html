@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Anomaly Detection</title>
+</head>
+<body>
+    <h1>Color Anomaly Detection</h1>
+    <h2>By: EV, Seth, and Joe</h2>
+
+    <div id="full-image-processor">
+        <!-- Image Section -->
+        <div class="image-container">
+            <canvas id="canvas"></canvas> <!-- Display only the canvas -->
+        </div>
+    
+        <!-- Controls Section -->
+        <div class="controls">
+            <div class="selector">
+                <h3>Select Sensitivity</h3>
+                <input type="range" id="sensitivity-slider" min="0" max="100" value="50">
+            </div>
+    
+            <div class="selector">
+                <h3>Select Anomaly Color</h3>
+                <button class="yellow-button" onclick="detectAnomalies('yellow')">Yellow Anomalies</button>
+                <button class="red-button" onclick="detectAnomalies('red')">Red Anomalies</button>
+                <button class="green-button" onclick="detectAnomalies('green')">Green Anomalies</button>
+                <button class="blue-button" onclick="detectAnomalies('blue')">Blue Anomalies</button>
+            </div>
+    
+            <div class="selector">
+                <label>
+                    <input type="checkbox" id="toggle-coordinates" onchange="toggleCoordinateDisplay()">
+                    Show Mouse Coordinates
+                </label>
+            </div>
+    
+            <div id="coordinates-output">
+                <h3>Detected Anomalies Coordinates:</h3>
+                <select id="sort-options" onchange="sortCoordinates()">
+                    <option value="size-asc">Sort by Size (Small to Large)</option>
+                    <option value="size-desc">Sort by Size (Large to Small)</option>
+                    <option value="left-to-right">Sort Left to Right</option>
+                </select>
+                <ul id="coordinates-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- Canvas Display Section -->
+        <div class="image-section">
+            <h3>Upload Image</h3>
+            <input type="file" id="image-input">
+            <canvas id="canvas"></canvas> <!-- Display only the canvas -->
+        </div>
+    </div>
+
+    <div id="info-box" class="info-box">
+        <span id="info-box-close" class="info-box-close">&times;</span>
+        <div id="info-box-content"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
