@@ -197,3 +197,130 @@ button {
     right: 10px;
     cursor: pointer;
 }
+/* General button styling */
+.nav-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Individual button colors */
+.nav-button:nth-child(1) { background-color: #FFA500; } /* Start */
+.nav-button:nth-child(2) { background-color: #FFD700; } /* The Team */
+.nav-button:nth-child(3) { background-color: #32CD32; } /* Background */
+.nav-button:nth-child(4) { background-color: #87CEFA; } /* Publication */
+
+/* Button hover effect */
+.nav-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Centering buttons in a row */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Center content on index page */
+.index-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Global Styles */
+body {
+    background-color: #1E2A4A; /* Dark Blue Background */
+    font-family: 'Poppins', sans-serif; /* Modern Font */
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Styling for Index Page */
+h1 {
+    font-size: 48px;
+    color: #87CEFA; /* Light Blue Title */
+    font-weight: bold;
+}
+
+/* Subtitle Styling */
+p {
+    font-size: 20px;
+    color: #d0d0d0; /* Light Gray Text */
+}
+
+/* Button Container for Index */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    padding: 12px 24px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #1E2A4A; /* Dark Blue Text */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button Colors */
+.nav-button:nth-child(1) { background-color: #FFA500; } /* Start */
+.nav-button:nth-child(2) { background-color: #FFD700; } /* The Team */
+.nav-button:nth-child(3) { background-color: #32CD32; } /* Background */
+.nav-button:nth-child(4) { background-color: #87CEFA; } /* Publication */
+
+/* Hover Effect */
+.nav-button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Anomaly Detector Page Styling */
+.detector-container {
+    padding: 20px;
+}
+
+/* Styling for Detected Coordinates Buttons */
+.clickable-coordinate {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #87CEFA; /* Light Blue */
+    color: #1E2A4A; /* Dark Blue Text */
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.clickable-coordinate:hover {
+    background-color: #5dade2; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+}
+
